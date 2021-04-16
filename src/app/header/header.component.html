@@ -1,0 +1,39 @@
+<header id="home">
+    <div class="container">
+        <div class="row">
+            <h1 class="d-lg-none">Build <span>Social Profiles</span> And Gain Revenue Profits</h1>
+            <div class="col-lg-8 d-none d-lg-block">
+                <h1>Build <span>Social Profiles</span> And Gain Revenue Profits</h1>
+                <div class="d-flex mb-5" *ngFor="let feature of features">
+                    <div>
+                        <ion-icon name="checkmark-outline"></ion-icon>
+                    </div>
+                    <div class="ml-3">{{feature}}</div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4">
+                <div class="form text-center">
+                    <h3>Sign Up Today</h3>
+                    <p>Please fill out this form to register</p>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Confirm Password">
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-outline-light btn-block">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

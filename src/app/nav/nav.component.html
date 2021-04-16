@@ -1,0 +1,15 @@
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+    <div class="container">
+        <a href="#" class="navbar-brand">LoopLap</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#main-nav " (click)="show = !show">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" [ngClass]="{'show':show}">
+            <ul class="navbar-nav ml-auto text-capitalize" id="#main-nav">
+                <li class="nav-item" *ngFor="let nav of navs">
+                    <a [routerLink]="nav" routerLinkActive="active" (click)="scroll(nav)" class="nav-link">{{nav}}</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

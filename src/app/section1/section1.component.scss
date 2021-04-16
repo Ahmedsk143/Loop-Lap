@@ -1,0 +1,37 @@
+section {
+  background-color: #333;
+  color: #fff;
+  padding: 30px 0;
+  scroll-margin-top: 59px;
+}
+
+$main-color: #007bff;
+
+article {
+  padding: 4.5rem 1rem;
+  color: #6c757d;
+  ion-icon {
+    margin-top: 4px;
+    border: 1px solid $main-color;
+    padding: 5px;
+    color: #fff;
+    background-color: $main-color;
+    font-size: 24px;
+    border-radius: 50%;
+  }
+  .img-container {
+    transform: skew(2deg, -11deg);
+    overflow: hidden;
+    border-radius: 20px;
+    @media (max-width: 768px) {
+      margin-bottom: 60px;
+    }
+
+    img {
+      transform: skew(-2deg, 11deg) scale(1.5);
+
+      display: block;
+      border-radius: 10px;
+    }
+  }
+}
